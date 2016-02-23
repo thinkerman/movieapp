@@ -28,23 +28,63 @@ class MainViewController: UIViewController {
         
    
         navigationItem.title = nil
-        if segue.identifier == "push"{
+        if segue.identifier == "travel"{
             let vc = segue.destinationViewController as UIViewController
             vc.navigationItem.title = "Travels"
             navigationItem.title = "Back"
             navigationController!.navigationBar.titleTextAttributes =
-                ([NSForegroundColorAttributeName: UIColor.whiteColor()])
+                ([NSForegroundColorAttributeName: UIColor.brownColor()])
             
-            navigationController!.navigationBar.barTintColor = UIColor(colorLiteralRed: 51.0, green: 102.0, blue: 102.0, alpha: 1.0)
-            navigationController!.navigationBar.tintColor = UIColor.whiteColor()
+                       navigationController!.navigationBar.tintColor = UIColor.brownColor()
             
         }
         
-        if segue.identifier == "pasta"{
+        if segue.identifier == "wedding"{
             let vc = segue.destinationViewController as UIViewController
-            vc.navigationItem.title = "View Controller Linguine all’arrabbiata"
-            navigationItem.title = "Pasta to One"
+            vc.navigationItem.title = "Wedding"
+            navigationItem.title = "Back"
+            navigationController!.navigationBar.titleTextAttributes =
+                ([NSForegroundColorAttributeName: UIColor.brownColor()])
+            
+            navigationController!.navigationBar.tintColor = UIColor.brownColor()
+            
         }
+
+        if segue.identifier == "birthday"{
+            let vc = segue.destinationViewController as UIViewController
+            vc.navigationItem.title = "Birthday"
+            navigationItem.title = "Back"
+            navigationController!.navigationBar.titleTextAttributes =
+                ([NSForegroundColorAttributeName: UIColor.brownColor()])
+            
+            navigationController!.navigationBar.tintColor = UIColor.brownColor()
+            
+        }
+
+        if segue.identifier == "sports"{
+            let vc = segue.destinationViewController as UIViewController
+            vc.navigationItem.title = "Sports"
+            navigationItem.title = "Back"
+            navigationController!.navigationBar.titleTextAttributes =
+                ([NSForegroundColorAttributeName: UIColor.brownColor()])
+            
+            navigationController!.navigationBar.tintColor = UIColor.brownColor()
+            
+        }
+        
+        if segue.identifier == "nature"{
+            let vc = segue.destinationViewController as UIViewController
+            vc.navigationItem.title = "Nature"
+            navigationItem.title = "Back"
+            navigationController!.navigationBar.titleTextAttributes =
+                ([NSForegroundColorAttributeName: UIColor.brownColor()])
+            
+            navigationController!.navigationBar.tintColor = UIColor.brownColor()
+            
+        }
+
+
+       
     }
     
     override func didReceiveMemoryWarning() {

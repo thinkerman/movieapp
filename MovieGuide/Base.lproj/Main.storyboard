@@ -41,7 +41,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w44-Z7-g5x" kind="show" identifier="push" id="Sn5-pQ-Je9"/>
+                                    <segue destination="w44-Z7-g5x" kind="show" identifier="travel" id="Sn5-pQ-Je9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYg-Wt-gFz">
@@ -54,6 +54,9 @@
                                 <state key="normal" title="    Birthday/Anniversary">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="37z-LQ-WnU" kind="show" identifier="birthday" id="eNa-HB-aGU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-yB-gvz">
                                 <rect key="frame" x="0.0" y="427" width="375" height="80"/>
@@ -65,6 +68,9 @@
                                 <state key="normal" title="    Wedding">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kBf-kl-Khl" kind="show" identifier="wedding" id="9t3-dR-Buy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGC-C1-KiM">
                                 <rect key="frame" x="0.0" y="507" width="375" height="80"/>
@@ -76,6 +82,9 @@
                                 <state key="normal" title="    Sports/Comeptition">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZKb-M0-5c7" kind="show" identifier="sports" id="uAT-LM-yOV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbZ-9F-x01">
                                 <rect key="frame" x="0.0" y="587" width="375" height="80"/>
@@ -87,6 +96,9 @@
                                 <state key="normal" title="    Nature">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ven-Gh-eqN" kind="show" identifier="nature" id="uvA-VD-o7E"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -117,7 +129,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0Z-9X-Bjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5063.5" y="-828.5"/>
+            <point key="canvasLocation" x="4445.5" y="-830.5"/>
+        </scene>
+        <!--Nature-->
+        <scene sceneID="EDw-x6-1Iz">
+            <objects>
+                <viewController title="Nature" id="Ven-Gh-eqN" customClass="NatureTemplateViewController" customModule="MovieGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PG5-zR-s5Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gdx-fm-Oq3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KIO-FD-0Cd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.22432558329999999" green="0.48652015469999998" blue="0.72291179260000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1c-e2-20L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5761.5" y="-670.5"/>
         </scene>
         <!--Travel Template-->
         <scene sceneID="BnZ-2j-Ktv">
@@ -130,14 +161,105 @@
                     <view key="view" contentMode="scaleAspectFit" id="OnU-fq-wqY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5ey-P6-7TM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.48627450980392156" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.22352941176470587" green="0.48627450980392156" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Kc8-H7-eMT">
+                                        <rect key="frame" x="0.0" y="114" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kc8-H7-eMT" id="HmS-36-osB">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.48627450979999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="w44-Z7-g5x" id="ppc-mZ-4Ov"/>
+                                    <outlet property="delegate" destination="w44-Z7-g5x" id="O4c-9n-FLR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22432558329999999" green="0.48652015469999998" blue="0.72291179260000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5ey-P6-7TM" firstAttribute="top" secondItem="JK9-bm-vyU" secondAttribute="bottom" id="2MF-vZ-z7U"/>
+                            <constraint firstItem="5ey-P6-7TM" firstAttribute="bottom" secondItem="9BH-JL-NTf" secondAttribute="top" id="QSZ-QI-opb"/>
+                            <constraint firstItem="5ey-P6-7TM" firstAttribute="leading" secondItem="OnU-fq-wqY" secondAttribute="leading" id="a2N-KV-7pg"/>
+                            <constraint firstAttribute="trailing" secondItem="5ey-P6-7TM" secondAttribute="trailing" id="eka-AU-hxF"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="5ey-P6-7TM" id="lmb-pJ-KoJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Uw-PE-3lP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4974.5" y="-1419.5"/>
+        </scene>
+        <!--Birthday Template View Controller-->
+        <scene sceneID="qdb-E6-a9J">
+            <objects>
+                <viewController id="37z-LQ-WnU" customClass="BirthdayTemplateViewController" customModule="MovieGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gOr-NW-vTd"/>
+                        <viewControllerLayoutGuide type="bottom" id="FsK-h6-R5V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R7m-LW-C5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.22432558329999999" green="0.48652015469999998" blue="0.72291179260000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Uw-PE-3lP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dya-wH-UrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5598" y="-867"/>
+            <point key="canvasLocation" x="5972.5" y="-1305.5"/>
+        </scene>
+        <!--Sports-->
+        <scene sceneID="mN9-f4-prU">
+            <objects>
+                <viewController title="Sports" id="ZKb-M0-5c7" customClass="SportsTemplateViewController" customModule="MovieGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dX5-bB-dNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="DSM-JW-md0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dm0-IP-KpQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.22352941176470587" green="0.48627450980392156" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ky9-6s-fCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3991.5" y="-1520.5"/>
+        </scene>
+        <!--Wedding Template View Controller-->
+        <scene sceneID="c98-oc-hfw">
+            <objects>
+                <viewController id="kBf-kl-Khl" customClass="WeddingTemplateViewController" customModule="MovieGuide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v9P-1q-LIw"/>
+                        <viewControllerLayoutGuide type="bottom" id="5A9-1M-jXL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hLs-eL-jot">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.22432558329999999" green="0.48652015469999998" blue="0.72291179260000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RyG-hm-zyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6485.5" y="-1322.5"/>
         </scene>
         <!--Wedding-->
         <scene sceneID="OSB-bi-pc7">
@@ -183,13 +305,19 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fFW-EE-JoN">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
                     <connections>
                         <segue destination="8pv-Tf-QI2" kind="relationship" relationship="rootViewController" id="6DH-zQ-NIb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUj-Pc-bsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4674.5" y="-816.5"/>
+            <point key="canvasLocation" x="3991.5" y="-776.5"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
