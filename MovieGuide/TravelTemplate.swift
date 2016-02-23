@@ -10,19 +10,26 @@ import UIKit
 
 class TravelTemplateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+   var travelArray = ["Video 1", "Video 2", "Video 3"]
     
     @IBOutlet weak var tableView: UITableView!
+   
     
     
     //TableView Codes
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return travelArray.count
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "Hello world"
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
+        cell.textLabel?.text = travelArray[indexPath.row]
+        
+     
+        
+
         return cell
         
     }
