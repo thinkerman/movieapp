@@ -10,7 +10,7 @@ import UIKit
 
 class TravelTemplateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-   var travelArray = ["Video 1", "Video 2", "Video 3"]
+   var travelArray = ["Travel Video 1", "Travel Video 2", "Travel Video 3","Travel Video 4"]
     
     @IBOutlet weak var tableView: UITableView!
    
@@ -35,10 +35,13 @@ class TravelTemplateViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     override func viewDidLoad() {
+        
+     
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
          self.navigationController!.navigationBar.hidden = false
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
         
         
         

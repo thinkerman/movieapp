@@ -22,6 +22,125 @@ class MainViewController: UIViewController {
 
     }
     
+    @IBAction func TravelAlert(sender: UIButton) {
+        
+        var loginTextField: UITextField?
+        let alertController = UIAlertController(title: "New Story", message: "Enter Name of your story", preferredStyle: .Alert)
+        let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            //println("Ok Button Pressed")
+            
+            self.performSegueWithIdentifier("travel", sender: UIButton.self)
+            
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+          //  println("Cancel Button Pressed")
+        }
+        alertController.addAction(ok)
+        alertController.addAction(cancel)
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            // Enter the textfiled customization code here.
+            loginTextField = textField
+            loginTextField?.placeholder = ""
+        }
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func WeddingAlert(sender: UIButton) {
+        
+        var loginTextField: UITextField?
+        let alertController = UIAlertController(title: "New Story", message: "Enter Name of your story", preferredStyle: .Alert)
+        let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            //println("Ok Button Pressed")
+            
+            self.performSegueWithIdentifier("wedding", sender: UIButton.self)
+            
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            //  println("Cancel Button Pressed")
+        }
+        alertController.addAction(ok)
+        alertController.addAction(cancel)
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            // Enter the textfiled customization code here.
+            loginTextField = textField
+            loginTextField?.placeholder = ""
+        }
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
+    
+    @IBAction func BirthdayAlert(sender: UIButton) {
+        
+        var loginTextField: UITextField?
+        let alertController = UIAlertController(title: "New Story", message: "Enter Name of your story", preferredStyle: .Alert)
+        let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            //println("Ok Button Pressed")
+            
+            self.performSegueWithIdentifier("birthday", sender: UIButton.self)
+            
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            //  println("Cancel Button Pressed")
+        }
+        alertController.addAction(ok)
+        alertController.addAction(cancel)
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            // Enter the textfiled customization code here.
+            loginTextField = textField
+            loginTextField?.placeholder = ""
+        }
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
+    @IBAction func SportsAlert(sender: UIButton) {
+        
+        var loginTextField: UITextField?
+        let alertController = UIAlertController(title: "New Story", message: "Enter Name of your story", preferredStyle: .Alert)
+        let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            //println("Ok Button Pressed")
+            
+            self.performSegueWithIdentifier("sports", sender: UIButton.self)
+            
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            //  println("Cancel Button Pressed")
+        }
+        alertController.addAction(ok)
+        alertController.addAction(cancel)
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            // Enter the textfiled customization code here.
+            loginTextField = textField
+            loginTextField?.placeholder = ""
+        }
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
+    
+    
+    
+    @IBAction func NatureAlert(sender: UIButton) {
+        
+        var loginTextField: UITextField?
+        let alertController = UIAlertController(title: "New Story", message: "Enter Name of your story", preferredStyle: .Alert)
+        let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            //println("Ok Button Pressed")
+            
+            self.performSegueWithIdentifier("nature", sender: UIButton.self)
+            
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            //  println("Cancel Button Pressed")
+        }
+        alertController.addAction(ok)
+        alertController.addAction(cancel)
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            // Enter the textfiled customization code here.
+            loginTextField = textField
+            loginTextField?.placeholder = ""
+        }
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         //set title of view controller dynamically

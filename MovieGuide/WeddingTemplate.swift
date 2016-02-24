@@ -19,15 +19,18 @@ class WeddingTemplateViewController: UIViewController,UITableViewDataSource,UITa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("weddingCell")
-        cell!.textLabel?.text = weddingTable[indexPath.row]
-        return cell!
+        let cell = tableView.dequeueReusableCellWithIdentifier("weddingCell")!
+        cell.textLabel?.text = weddingTable[indexPath.row]
+        return cell
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationController!.navigationBar.hidden = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
+        
+
 
     }
     

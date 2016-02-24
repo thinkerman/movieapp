@@ -9,7 +9,7 @@ import UIKit
 
 class BirthdayTemplateViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var birthdayArray = ["Video 1", "Video 2", "Video 3"]
+    var birthdayArray = ["Birthday Video 1", "Birthday Video 2", " Birthday Video 3"]
     
     @IBOutlet weak var UITable: UITableView!
     
@@ -30,6 +30,9 @@ class BirthdayTemplateViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
           self.navigationController!.navigationBar.hidden = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
+        
+
     }
     
     override func didReceiveMemoryWarning() {
