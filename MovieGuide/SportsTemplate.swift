@@ -16,11 +16,21 @@ class SportsTemplateViewController: UIViewController,UITableViewDelegate,UITable
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
          self.navigationController!.navigationBar.hidden = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
+      //  navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
         
 
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //  let alertView = UIAlertView()
+        //alertView.addButtonWithTitle("Ok")
+        //alertView.title = "Row Selected"
+        //alertView.message = self.birthdayArray[indexPath.row]
+        //alertView.show()
+        self.performSegueWithIdentifier("sportsCamera", sender: UITableViewCell.self)
+        
+        
+    }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sportsTable.count
     }
@@ -29,6 +39,7 @@ class SportsTemplateViewController: UIViewController,UITableViewDelegate,UITable
         
         let cell = tableView.dequeueReusableCellWithIdentifier("sportsCell")!
         cell.textLabel?.text = sportsTable[indexPath.row]
+         cell.textLabel?.textColor = UIColor.whiteColor()
         return cell
         
     }

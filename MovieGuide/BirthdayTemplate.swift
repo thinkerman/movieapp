@@ -7,11 +7,14 @@
 //
 import UIKit
 
-class BirthdayTemplateViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BirthdayTemplate: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var birthdayArray = ["Birthday Video 1", "Birthday Video 2", " Birthday Video 3"]
     
-    @IBOutlet weak var UITable: UITableView!
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return birthdayArray.count
@@ -22,23 +25,30 @@ class BirthdayTemplateViewController: UIViewController, UITableViewDelegate, UIT
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cellBirthday")!
         cell.textLabel?.text = birthdayArray[indexPath.row]
-
+        cell.textLabel?.textColor = UIColor.whiteColor()
         return cell
+        
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //  let alertView = UIAlertView()
+        //alertView.addButtonWithTitle("Ok")
+        //alertView.title = "Row Selected"
+        //alertView.message = self.birthdayArray[indexPath.row]
+        //alertView.show()
+        self.performSegueWithIdentifier("birthdayCamera", sender: UITableViewCell.self)
+        
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-          self.navigationController!.navigationBar.hidden = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
+        self.navigationController!.navigationBar.hidden = false
+        // navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
         
-
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     
 }

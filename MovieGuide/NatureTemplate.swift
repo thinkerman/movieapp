@@ -24,25 +24,36 @@ class NatureTemplateViewController: UIViewController, UITableViewDelegate, UITab
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cellNature")!
         cell.textLabel?.text = birthdayArray[indexPath.row]
-      
+         cell.textLabel?.textColor = UIColor.whiteColor()
 
-        
-        
         return cell
         
     }
     
+    
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+      //  let alertView = UIAlertView()
+        //alertView.addButtonWithTitle("Ok")
+        //alertView.title = "Row Selected"
+        //alertView.message = self.birthdayArray[indexPath.row]
+        //alertView.show()
+       self.performSegueWithIdentifier("natureCamera", sender: UITableViewCell.self)
+        
+        
+           }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
           self.navigationController!.navigationBar.hidden = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
-          UITableViewCell.appearance().textLabel?.textColor = UIColor.whiteColor()
+      
+      
         
 
     }
-    
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

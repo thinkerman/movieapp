@@ -21,14 +21,27 @@ class WeddingTemplateViewController: UIViewController,UITableViewDataSource,UITa
         
         let cell = tableView.dequeueReusableCellWithIdentifier("weddingCell")!
         cell.textLabel?.text = weddingTable[indexPath.row]
+         cell.textLabel?.textColor = UIColor.whiteColor()
         return cell
         
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //  let alertView = UIAlertView()
+        //alertView.addButtonWithTitle("Ok")
+        //alertView.title = "Row Selected"
+        //alertView.message = self.birthdayArray[indexPath.row]
+        //alertView.show()
+        self.performSegueWithIdentifier("weddingCamera", sender: UITableViewCell.self)
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationController!.navigationBar.hidden = false
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
+       // navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
         
 
 
