@@ -8,9 +8,9 @@
 
 import UIKit
 
-class WeddingTemplateViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class Wedding: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    var weddingTable = ["Wedding Video 1", "Wedding Video 2", "Wedding Video3"]
+    var weddingTable = ["Wedding Video 1", "Wedding Video 2", "Wedding Video3", "Wedding Video 4", "Wedding Video 5"]
     @IBOutlet weak var weddingTableView: UITableView!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

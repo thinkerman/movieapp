@@ -39,7 +39,7 @@ class Travel: UIViewController, UITableViewDataSource, UITableViewDelegate {
         //  alertView.title = "Row Selected"
         //  alertView.message = self.travelArray[indexPath.row]
         //   alertView.show()
-        // self.performSegueWithIdentifier("travelCamera", sender: UITableViewCell.self)
+      self.performSegueWithIdentifier("travelCamera", sender: UITableViewCell.self)
         
     }
     

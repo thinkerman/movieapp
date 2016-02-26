@@ -1,19 +1,20 @@
 //
-//  TravelTemplate.swift
+//  birthday.swift
 //  MovieGuide
 //
-//  Created by Samuel on 23/02/2016.
+//  Created by Samuel on 26/02/2016.
 //  Copyright © 2016 Veedoo. All rights reserved.
 //
 
+
 import UIKit
 
-class TravelTemplateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class Birthday: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-   var travelArray = ["Travel Video 1", "Travel Video 2", "Travel Video 3","Travel Video 4"]
+    var travelArray = ["Birthday Video 1", "Birthday Video 2", "Birthday Video 3","Birthday Video 4"]
     
     @IBOutlet weak var tableView: UITableView!
-   
+    
     
     
     //TableView Codes
@@ -24,32 +25,32 @@ class TravelTemplateViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellBirthday")!
         cell.textLabel?.text = travelArray[indexPath.row]
-       cell.textLabel?.textColor = UIColor.whiteColor()
-    
+        cell.textLabel?.textColor = UIColor.whiteColor()
+        
         return cell
         
     }
-   
+    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-      //  let alertView = UIAlertView()
-      //  alertView.addButtonWithTitle("Ok")
-      //  alertView.title = "Row Selected"
-      //  alertView.message = self.travelArray[indexPath.row]
-     //   alertView.show()
-      // self.performSegueWithIdentifier("travelCamera", sender: UITableViewCell.self)
+        //  let alertView = UIAlertView()
+        //  alertView.addButtonWithTitle("Ok")
+        //  alertView.title = "Row Selected"
+        //  alertView.message = self.travelArray[indexPath.row]
+        //   alertView.show()
+        self.performSegueWithIdentifier("birthdayCamera", sender: UITableViewCell.self)
         
     }
     
-   
-   
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-         self.navigationController!.navigationBar.hidden = false
+        self.navigationController!.navigationBar.hidden = false
         
         //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Library", style: .Plain, target: self, action: "addTapped")
         

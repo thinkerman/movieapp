@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7E27E8AA1C7F2ECC00A191ED /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27E8A91C7F2ECC00A191ED /* Video.swift */; };
 		7E4208721C8095B900D7A468 /* travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4208711C8095B900D7A468 /* travel.swift */; };
+		7E4208741C80A13E00D7A468 /* birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4208731C80A13E00D7A468 /* birthday.swift */; };
+		7E4208761C80B2BF00D7A468 /* sports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4208751C80B2BF00D7A468 /* sports.swift */; };
 		7E5B0B051C7B29450009488F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B041C7B29450009488F /* AppDelegate.swift */; };
 		7E5B0B071C7B29450009488F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B061C7B29450009488F /* ViewController.swift */; };
 		7E5B0B0A1C7B29450009488F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B0B081C7B29450009488F /* Main.storyboard */; };
@@ -16,11 +18,8 @@
 		7E5B0B0F1C7B29450009488F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5B0B0D1C7B29450009488F /* LaunchScreen.storyboard */; };
 		7E5B0B1A1C7B29450009488F /* MovieGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B191C7B29450009488F /* MovieGuideTests.swift */; };
 		7E5B0B251C7B29450009488F /* MovieGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B241C7B29450009488F /* MovieGuideUITests.swift */; };
-		7E5B0B391C7C836B0009488F /* WeddingTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B381C7C836B0009488F /* WeddingTemplate.swift */; };
-		7E5B0B3B1C7C837D0009488F /* SportsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B3A1C7C837D0009488F /* SportsTemplate.swift */; };
+		7E5B0B391C7C836B0009488F /* Wedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B381C7C836B0009488F /* Wedding.swift */; };
 		7E5B0B3D1C7C83980009488F /* NatureTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B3C1C7C83980009488F /* NatureTemplate.swift */; };
-		7E5B0B3F1C7C83AD0009488F /* BirthdayTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B3E1C7C83AD0009488F /* BirthdayTemplate.swift */; };
-		7E5B0B411C7C83FD0009488F /* TravelTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B0B401C7C83FD0009488F /* TravelTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +42,8 @@
 /* Begin PBXFileReference section */
 		7E27E8A91C7F2ECC00A191ED /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video.swift; path = ../Video.swift; sourceTree = "<group>"; };
 		7E4208711C8095B900D7A468 /* travel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = travel.swift; sourceTree = "<group>"; };
+		7E4208731C80A13E00D7A468 /* birthday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = birthday.swift; sourceTree = "<group>"; };
+		7E4208751C80B2BF00D7A468 /* sports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sports.swift; path = ../sports.swift; sourceTree = "<group>"; };
 		7E5B0B011C7B29450009488F /* MovieGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5B0B041C7B29450009488F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E5B0B061C7B29450009488F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,11 +58,8 @@
 		7E5B0B241C7B29450009488F /* MovieGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGuideUITests.swift; sourceTree = "<group>"; };
 		7E5B0B261C7B29450009488F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5B0B331C7B58410009488F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		7E5B0B381C7C836B0009488F /* WeddingTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingTemplate.swift; sourceTree = "<group>"; };
-		7E5B0B3A1C7C837D0009488F /* SportsTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsTemplate.swift; sourceTree = "<group>"; };
+		7E5B0B381C7C836B0009488F /* Wedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wedding.swift; sourceTree = "<group>"; };
 		7E5B0B3C1C7C83980009488F /* NatureTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NatureTemplate.swift; sourceTree = "<group>"; };
-		7E5B0B3E1C7C83AD0009488F /* BirthdayTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayTemplate.swift; sourceTree = "<group>"; };
-		7E5B0B401C7C83FD0009488F /* TravelTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +113,12 @@
 				7E5B0B041C7B29450009488F /* AppDelegate.swift */,
 				7E5B0B061C7B29450009488F /* ViewController.swift */,
 				7E5B0B081C7B29450009488F /* Main.storyboard */,
-				7E5B0B401C7C83FD0009488F /* TravelTemplate.swift */,
+				7E4208751C80B2BF00D7A468 /* sports.swift */,
 				7E4208711C8095B900D7A468 /* travel.swift */,
+				7E4208731C80A13E00D7A468 /* birthday.swift */,
 				7E27E8A91C7F2ECC00A191ED /* Video.swift */,
-				7E5B0B381C7C836B0009488F /* WeddingTemplate.swift */,
-				7E5B0B3A1C7C837D0009488F /* SportsTemplate.swift */,
+				7E5B0B381C7C836B0009488F /* Wedding.swift */,
 				7E5B0B3C1C7C83980009488F /* NatureTemplate.swift */,
-				7E5B0B3E1C7C83AD0009488F /* BirthdayTemplate.swift */,
 				7E5B0B0B1C7B29450009488F /* Assets.xcassets */,
 				7E5B0B0D1C7B29450009488F /* LaunchScreen.storyboard */,
 				7E5B0B101C7B29450009488F /* Info.plist */,
@@ -281,12 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4208741C80A13E00D7A468 /* birthday.swift in Sources */,
 				7E5B0B071C7B29450009488F /* ViewController.swift in Sources */,
+				7E4208761C80B2BF00D7A468 /* sports.swift in Sources */,
 				7E4208721C8095B900D7A468 /* travel.swift in Sources */,
-				7E5B0B411C7C83FD0009488F /* TravelTemplate.swift in Sources */,
-				7E5B0B3F1C7C83AD0009488F /* BirthdayTemplate.swift in Sources */,
-				7E5B0B391C7C836B0009488F /* WeddingTemplate.swift in Sources */,
-				7E5B0B3B1C7C837D0009488F /* SportsTemplate.swift in Sources */,
+				7E5B0B391C7C836B0009488F /* Wedding.swift in Sources */,
 				7E27E8AA1C7F2ECC00A191ED /* Video.swift in Sources */,
 				7E5B0B3D1C7C83980009488F /* NatureTemplate.swift in Sources */,
 				7E5B0B051C7B29450009488F /* AppDelegate.swift in Sources */,

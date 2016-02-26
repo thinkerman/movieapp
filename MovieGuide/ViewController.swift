@@ -55,9 +55,8 @@ class MainViewController: UIViewController {
         let alertController = UIAlertController(title: "New Story", message: "Enter Name of your story", preferredStyle: .Alert)
         let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
             //println("Ok Button Pressed")
-            
-        // self.performSegueWithIdentifier("birthday", sender: UIButton.self)
-         self.performSegueWithIdentifier("birthdaySeque", sender: UIAlertController.self)
+        
+            self.performSegueWithIdentifier("birthday", sender: UIButton.self)
             
         })
         let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
@@ -80,7 +79,7 @@ class MainViewController: UIViewController {
         let alertController = UIAlertController(title: "New Story", message: "Enter Name of your story", preferredStyle: .Alert)
         let ok = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
             //println("Ok Button Pressed")
-            self.performSegueWithIdentifier("travel", sender: UIAlertController.self)
+            self.performSegueWithIdentifier("wedding", sender: UIAlertController.self)
             
         })
         let cancel = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
