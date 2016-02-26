@@ -466,5 +466,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="brS-hW-VHV"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.22352941179999999" green="0.48627450979999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
 </document>
